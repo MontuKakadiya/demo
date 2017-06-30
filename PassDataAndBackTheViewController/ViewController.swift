@@ -31,13 +31,12 @@ class ViewController: UIViewController {
         if second < third
         {
             let second = segue.destinationViewController as! SecondViewController
-            second.MyLabel.text = MyTextFiled.text
-            
+            second.MyLabel.text = MyTextFiled.text!
         }
         else
         {
            let third = segue.destinationViewController as! ThiredViewController
-            third.mystring = MyTextField2.text!
+            third.label3.text = MyTextField2.text!
         }
         
     
